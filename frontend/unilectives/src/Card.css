@@ -1,0 +1,40 @@
+.card {
+    border-radius: 15px;
+    box-shadow: 0 5px 10px 1px #e7e7e7;
+    width: max(300px, calc(33% - 80px));
+    height: 200px;
+    margin: 40px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    background: #fdfdfd;
+}
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 0 0 auto 0;
+    justify-content: center;
+    font-weight: 800;
+}
+  
+.card p {
+    margin-top: 0;
+    flex: auto;
+}
+  
+.terms {
+    display: flex;
+    justify-self: flex-end;
+}
+  
+.term {
+    margin: 0 10px 0 0;
+    border-radius: 15px;
+    font-size: 12px;
+    padding: 4px 8px;
+}
