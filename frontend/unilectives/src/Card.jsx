@@ -13,7 +13,7 @@ function Card({title, description, average_stars, total_reviews, offered_terms})
                         <span className='text-3xl opacity-40'>★★★★★</span>
                         <span className="text-3xl absolute bg-purple-400 inset-0 text-transparent bg-clip-text select-none" style={style}>★★★★★</span>
                     </div>
-                    <p>{total_reviews} reviews</p>
+                    <p className='text-sm text-gray-400'>{total_reviews} reviews</p>
                 </div>
             </div>
             <p className="description">{description}</p>
