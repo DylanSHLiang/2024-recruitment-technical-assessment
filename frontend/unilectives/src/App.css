@@ -16,7 +16,7 @@ img {
 input {
   height: 60px;
   border-radius: 6px;
-  background-image: url(assets/search-interface-symbol.png);
+  background-image: url(assets/magnifying-glass.svg);
   background-repeat: no-repeat;
   background-position: left 15px center;
   background-size: 25px;

@@ -1,10 +1,10 @@
 import unilectives from './assets/unilectives.svg'
-import book from './assets/book.png'
-import shield from './assets/insurance.png'
-import menu from './assets/menu-bar.png'
-import profile from './assets/user.png'
-import mode from './assets/night-mode.png'
-import exit from './assets/exit.png'
+import book from './assets/book-open.svg'
+import shield from './assets/shield-check.svg'
+import menu from './assets/bars-arrow-up.svg'
+import profile from './assets/user-circle.svg'
+import mode from './assets/moon.svg'
+import exit from './assets/arrow-right-end-on-rectangle.svg'
 import './App.css'
 import Card from './Card'
 import courses from '../../courses.json'
@@ -20,7 +20,7 @@ function App() {
             <img src={shield}></img>
         </div>
         <div className="flex flex-col mb-5">
-          <img src={menu}></img>
+          <img src={menu} className=' rotate-90'></img>
           <img src={profile}></img>
           <img src={mode}></img>
           <img src={exit}></img>
