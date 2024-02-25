@@ -2,7 +2,7 @@
     border-radius: 15px;
     box-shadow: 0 5px 10px 1px #e7e7e7;
     width: max(300px, calc(33% - 80px));
-    height: 200px;
+    height: 240px;
     margin: 40px;
     padding: 30px 40px;
     display: flex;

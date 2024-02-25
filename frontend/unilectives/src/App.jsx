@@ -8,11 +8,13 @@ import exit from './assets/arrow-right-end-on-rectangle.svg'
 import search from './assets/magnifying-glass.svg'
 import './App.css'
 import Card from './Card'
+import Search from './Search'
 import courses from '../../courses.json'
 import { useState } from 'react'
 
 function App() {
   const [color, setColor] = useState(true)
+  const [searchbox, setSearchbox] = useState(false)
 
   const changeColor = (e) => {
     setColor((prev) => !prev)
@@ -21,7 +23,6 @@ function App() {
     } else {
       e.target.classList.add('text-blue-500')
     }
-    
   }
 
   return (
@@ -43,10 +44,11 @@ function App() {
       <div className=' mx-36 flex-1'>
         <div className="intro">
           <h3 className='text-lg font-medium'>DevSoc presents</h3>
-          <h1 className='text-7xl font-extrabold text-blue-500' onClick={changeColor}>unilectives</h1>
+          <button className='my-0'><h1 className='text-7xl font-extrabold text-blue-500' onClick={changeColor}>unilectives</h1></button>
           <h2 className=' text-xl font-extrabold'>Your one-stop shop for UNSW course and elective reviews.</h2>
         </div>
-        <button className='rounded-lg h-14 text-left flex items-center w-full placeholder:text-blue-500 border-2 border-blue-500 outline-none text-blue-500'><img src={search} className='mr-4' ></img>Search for a course e.g. COMP1511</button>
+        <button onClick={() => setSearchbox(true)} className='rounded-lg h-14 text-left flex items-center w-full placeholder:text-blue-500 border-2 border-blue-500 outline-none text-blue-500'><img src={search} className='mr-4'></img>Search for a course e.g. COMP1511</button>
+        <Search trigger={searchbox} setSearchbox={setSearchbox}></Search>
         <select className='my-5 border-2 rounded-md w-60 h-12 pl-4' name="sort" id="sort">
             <option value="" defaultValue={true}>Sort by</option>
             <option value="name">Name</option>
